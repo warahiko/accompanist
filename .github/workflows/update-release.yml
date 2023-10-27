@@ -22,7 +22,9 @@ jobs:
           echo "IS_PRERELEASE=$is_prerelease" >> $GITHUB_OUTPUT
       - uses: release-drafter/release-drafter@v5
         with:
-          version: ${{ env.GITHUB_REF_NAME }}
+          name: ${{ github.ref_name }} 🌈
+          tag: ${{ github.ref_name }}
+          version: ${{ github.ref_name }}
           prerelease: ${{ steps.detect_unstable_release.outputs.IS_PRERELEASE }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
