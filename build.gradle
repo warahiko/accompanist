@@ -202,7 +202,7 @@ subprojects {
             repositories {
                 maven {
                     name = "githubPackages"
-                    url = "https://github.com/warahiko/accompanist"
+                    url = "https://maven.pkg.github.com/warahiko/accompanist"
                     // username and password (a personal Github access token) should be specified as
                     // `githubPackagesUsername` and `githubPackagesPassword` Gradle properties or alternatively
                     // as `ORG_GRADLE_PROJECT_githubPackagesUsername` and `ORG_GRADLE_PROJECT_githubPackagesPassword`
